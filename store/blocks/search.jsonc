@@ -48,12 +48,12 @@
 },
 
 "search-content": {
+  "children" :[
+    "search-content"
+  ],
   "blocks": [
     "gallery", 
     "not-found"
-  ],
-  "children" :[
-    "search-content"
   ]
 },
 
