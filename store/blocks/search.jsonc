@@ -50,13 +50,17 @@
 "search-content": {
   "blocks": [
     "gallery", 
-    "not-found",
-    "search-content"
+    "not-found"
   ]
 },
 
 "gallery": {
   "blocks": ["product-summary.shelf"]
-}
+},
 
+"flex-layout.col#search":{
+  "children" :[
+    "search-content"
+  ]
+}
 }
