@@ -177,7 +177,7 @@
       "emphasis": "#f71963",
       "disabled": "#e3e4e6",
       "success": "#8bc34a",
-      "success--faded": "#eafce3",
+      "success--faded": "#eafce3", 
       "danger": "#ff4c4c",
       "danger--faded": "#ffe6e6",
       "warning": "#ffb100",
