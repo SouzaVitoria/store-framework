@@ -19,7 +19,7 @@
       "hideUnavailableItems": true,
       "maxItemsPerPage": 8,
       "queryField": "Blue Top Retro Camera",
-      "mapField": "ft"
+      "mapField": "ft"  
     }
   }
 }
