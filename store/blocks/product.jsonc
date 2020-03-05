@@ -67,8 +67,8 @@
 
   "sku-selector": {
     "props": {
-      "initialSelection": "Enum",
-      "visibleVariations": [],
+      "initialSelection": "empty",
+      "showVariationsLabels": true,
       "showVariationsErrorMessage": true
     }
   }
