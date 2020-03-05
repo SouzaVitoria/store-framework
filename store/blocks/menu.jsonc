@@ -21,7 +21,7 @@
   "vtex.menu@2.x:submenu#electronics": {
     "children": ["vtex.menu@2.x:menu#electronics"]
   },
-
+ 
   "menu-item#major-appliances": {
     "children": ["vtex.menu@2.x:submenu#major"]
   },
