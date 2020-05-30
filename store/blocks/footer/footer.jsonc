@@ -1,0 +1,177 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#footer-desktop"]
+  },
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footer-mobile"]
+  },
+  "flex-layout.row#footer-desktop": {
+    "children": ["social-networks", "accepted-payment-methods", "powered-by"]
+  },
+  "flex-layout.row#footer-mobile": {
+    "children": ["image", "flex-layout.row#text-mobile"]
+  },
+
+  "image": {
+    "props": {
+      "width": 300,
+      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+    }
+  },
+
+  "flex-layout.row#text-mobile": {
+    "children": [
+      "rich-text#title-institutional",
+      "rich-text#text-about-us",
+      "rich-text#text-our-events",
+      "rich-text#text-tips-curiosities",
+      "rich-text#text-work-us",
+      "rich-text#title-support",
+      "rich-text#text-faq",
+      "rich-text#text-service-channels",
+      "rich-text#text-privacy-policy",
+      "rich-text#text-exchange-return-policy",
+      "rich-text#title-social-networks",
+      "social-networks",
+      "flex-layout.row#payment-methods",
+      "rich-text#text-copyright"
+    ]
+  },
+
+  "rich-text#title-institutional": {
+    "props": {
+      "text": "## Institucional",
+      "blockClass": "footer-title"
+    }
+  },
+  "rich-text#title-support": {
+    "props": {
+      "text": "## Suporte",
+      "blockClass": "footer-title"
+    }
+  },
+  "rich-text#title-social-networks": {
+    "props": {
+      "text": "## Redes sociais",
+      "blockClass": "footer-title"
+    }
+  },
+
+  "rich-text#text-about-us": {
+    "props": {
+      "text": "Sobre o mundo Pet",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#text-our-events": {
+    "props": {
+      "text": "Nossos eventos",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#text-tips-curiosities": {
+    "props": {
+      "text": "Dicas e curiosidades",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#text-work-us": {
+    "props": {
+      "text": "Trabalhe Conosco",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#text-faq": {
+    "props": {
+      "text": "FAQ",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#text-service-channels": {
+    "props": {
+      "text": "Canais de atendimento",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#text-privacy-policy": {
+    "props": {
+      "text": "Política de privacidade",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#text-exchange-return-policy": {
+    "props": {
+      "text": "Política de troca e devolução",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#text-copyright": {
+    "props": {
+      "text": "© 2020 mundopet.com.br. Todos os direitos reservados. \n Mundo Pet - Clínica Veterinária & Pet Shop. \n Av. Senador Virgílio Távora, 1400 - Aldeota, \n Fortaleza - CE, 60170-250. \n CNPJ 00.000.000/0001-00, IE 006.030.100.006.",
+      "blockClass": "footer-copyright"
+    }
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook" },
+        { "url": "https://instagram.com/foo", "name": "Instagram" }
+      ]
+    }
+  },
+
+  "flex-layout.row#payment-methods": {
+    "children": [
+      "image#visa",
+      "image#master-card",
+      "image#amex",
+      "image#elo",
+      "image#visa",
+      "image#hipercard"
+    ],
+    "props": {
+      "blockClass": "footer-payment-methods"
+    }
+  },
+  "image#visa": {
+    "props": {
+      "src": "arquivos/visa.svg",
+      "maxHeight": 25
+    }
+  },
+  "image#master-card": {
+    "props": {
+      "src": "arquivos/master-card.svg",
+      "maxHeight": 25
+    }
+  },
+  "image#amex": {
+    "props": {
+      "src": "arquivos/amex.svg",
+      "maxHeight": 25
+    }
+  },
+  "image#elo": {
+    "props": {
+      "src": "arquivos/visa.svg",
+      "maxHeight": 25
+    }
+  },
+  // "image#visa": {
+  //   "props": {
+  //     "src": "arquivos/amex.svg",
+  //     "maxHeight": 25
+  //   }
+  // },
+
+  "image#hipercard": {
+    "props": {
+      "src": "arquivos/amex.svg",
+      "maxHeight": 25
+    }
+  }
+}
