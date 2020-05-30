@@ -5,7 +5,10 @@
     background-position: center;
   }
 
-  .flexRowContent--footer-social-networks {
+  .flexRowContent--footer-social-networks,
+  .flexRowContent--footer-payment-methods,
+  .flexRowContent--drawer-row2,
+  .flexRowContent--drawer-phones {
     display: flex;
   }
 
@@ -25,7 +28,42 @@
     margin: 40px 7px 0;
   }
 
-  .flexRowContent--footer-payment-methods {
+  .flexRowContent--drawer-row2 .stretchChildrenWidth:first-child {
+    border-right: 1px solid #637390;
+  }
+
+  .flexCol--drawer-icon,
+  .flexCol--col-phone {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .flexColChild--drawer-icon,
+  .flexColChild--col-phone {
     display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .flexColChild--col-phone {
+    margin-right: 5px;
+  }
+
+  .flexRow--drawer-row2 {
+    background: #ebf2fa;
+  }
+
+  .flexRow--drawer-phones,
+  :global(.vtex-store-drawer-0-x-closeIconContainer) {
+    background: #2d93ac;
+  }
+
+  .flexRow--drawer-phones {
+    position: absolute;
+    bottom: 0;
+  }
+
+  :global(.vtex-store-drawer-0-x-closeIconButton) {
+    color: #fff;
   }
 }

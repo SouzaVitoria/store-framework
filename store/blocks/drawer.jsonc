@@ -1,80 +1,163 @@
 {
   "drawer": {
-    "children": ["vtex.menu@2.x:menu#drawer"]
+    "children": ["menu#drawer"]
   },
 
-  "vtex.menu@2.x:menu#drawer": {
+  "menu#drawer": {
+    "children": ["flex-layout.row#drawer-mobile"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "flex-layout.row#drawer-mobile": {
     "children": [
-      "menu-item#major-appliances-acc",
-      "menu-item#small-appliances-acc",
-      "menu-item#electronics-acc"
+      "flex-layout.row#drawer-row2",
+      "flex-layout.row#drawer-items",
+      "flex-layout.row#drawer-phones"
+    ],
+    "props": {
+      "blockClass": "drawer-content"
+    }
+  },
+
+  "flex-layout.row#drawer-row2": {
+    "children": ["flex-layout.col#drawer-col1", "flex-layout.col#drawer-col2"],
+    "props": {
+      "blockClass": "drawer-row2"
+    }
+  },
+
+  "flex-layout.col#drawer-col1": {
+    "children": ["image#col1", "rich-text#drawer-text1"],
+    "props": {
+      "blockClass": "drawer-icon"
+    }
+  },
+  "flex-layout.col#drawer-col2": {
+    "children": ["image#col2", "rich-text#drawer-text2"],
+    "props": {
+      "blockClass": "drawer-icon"
+    }
+  },
+
+  "image#col1": {
+    "props": {
+      "src": "arquivos/drawer-assinatura.svg",
+      "maxHeight": 20
+    }
+  },
+  "image#col2": {
+    "props": {
+      "src": "arquivos/drawer-repetir-pedido.svg",
+      "maxHeight": 20
+    }
+  },
+
+  "rich-text#drawer-text1": {
+    "props": {
+      "text": "Assinatura",
+      "blockClass": "drawer-text-col"
+    }
+  },
+  "rich-text#drawer-text2": {
+    "props": {
+      "text": "Repetir pedido",
+      "blockClass": "drawer-text-col"
+    }
+  },
+
+  "flex-layout.row#drawer-items": {
+    "children": [
+      "menu-item#dogs",
+      "menu-item#cats"
+      // "menu-item#rodents",
+      // "menu-item#birds",
+      // "menu-item#fish"
     ],
     "props": {
       "orientation": "vertical"
     }
   },
-  "menu-item#major-appliances-acc": {
+
+  "menu-item#dogs": {
+    "children": ["image#dogs", "rich-text#dogs"]
+  },
+  "menu-item#cats": {
+    "children": ["image#cats", "rich-text#cats"]
+  },
+
+  "image#dogs": {
     "props": {
-      "type": "category",
-      "highlight": true,
-      "itemProps": {
-        "categoryId": 1,
-        "text": "Major Appliances"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#major"]
-  },
-  "menu-item#small-appliances-acc": {
-    "props": {
-      "type": "category",
-      "highlight": true,
-      "itemProps": {
-        "categoryId": 2,
-        "text": "Small Appliances"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#small"]
-  },
-  "menu-item#electronics-acc": {
-    "props": {
-      "type": "category",
-      "highlight": true,
-      "itemProps": {
-        "categoryId": 3,
-        "text": "Electronics"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#electronics"]
-  },
-  "vtex.menu@2.x:submenu.accordion#major": {
-    "children": ["vtex.menu@2.x:menu#major"]
-  },
-  "vtex.menu@2.x:submenu.accordion#small": {
-    "children": ["vtex.menu@2.x:menu#small"]
-  },
-  "vtex.menu@2.x:submenu.accordion#electronics": {
-    "children": ["vtex.menu@2.x:menu#electronics"]
-  },
-  "vtex.menu@2.x:menu#major": {
-    "children": [
-      "menu-item#refrigerators",
-      "menu-item#ovens",
-      "menu-item#washers"
-    ],
-    "props": {
-      "orientation": "vertical"
+      "src": "arquivos/drawer-caes.svg",
+      "maxHeight": 20
     }
   },
-  "vtex.menu@2.x:menu#small": {
-    "children": ["menu-item#mixers", "menu-item#toasters", "menu-item#coffee"],
+  "image#cats": {
     "props": {
-      "orientation": "vertical"
+      "src": "arquivos/drawer-gatos.svg",
+      "maxHeight": 20
     }
   },
-  "vtex.menu@2.x:menu#electronics": {
-    "children": ["menu-item#cameras", "menu-item#laptops", "menu-item#tvs"],
+
+  "rich-text#dogs": {
     "props": {
-      "orientation": "vertical"
+      "text": "Cães",
+      "blockClass": "text-item"
+    }
+  },
+  "rich-text#cats": {
+    "props": {
+      "text": "Gatos",
+      "blockClass": "text-item"
+    }
+  },
+
+  "flex-layout.row#drawer-phones": {
+    "children": ["flex-layout.col#phone1", "flex-layout.col#phone2"],
+    "props": {
+      "blockClass": "drawer-phones"
+    }
+  },
+
+  "flex-layout.col#phone1": {
+    "children": ["image#phone", "rich-text#phone1"],
+    "props": {
+      "blockClass": "col-phone"
+    }
+  },
+  "flex-layout.col#phone2": {
+    "children": ["image#whatsapp", "rich-text#phone2"],
+    "props": {
+      "blockClass": "col-phone"
+    }
+  },
+
+  "rich-text#phone1": {
+    "props": {
+      "text": "55 7755-7755",
+      "blockClass": "text-phone"
+    }
+  },
+  "rich-text#phone2": {
+    "props": {
+      "text": "55 7755-7755",
+      "blockClass": "text-phone"
+    }
+  },
+
+  "image#phone": {
+    "props": {
+      "src": "arquivos/drawer-whatsapp.svg",
+      "maxHeight": 17,
+      "width": 17
+    }
+  },
+  "image#whatsapp": {
+    "props": {
+      "src": "arquivos/drawer-whatsapp.svg",
+      "maxHeight": 17,
+      "width": 17
     }
   }
 }

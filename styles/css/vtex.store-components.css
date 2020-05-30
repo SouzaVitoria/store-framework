@@ -42,4 +42,8 @@
   .imageElement--footer-animais {
     width: 270px !important;
   }
+
+  :global(.vtex-flex-layout-0-x-flexRow--drawer-content) .container {
+    padding: 0;
+  }
 }

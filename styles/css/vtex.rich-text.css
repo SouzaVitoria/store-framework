@@ -41,4 +41,22 @@
   .container--footer-copyright {
     justify-content: center;
   }
+
+  .paragraph--drawer-text-col {
+    /* font-family: Poppins; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #637390;
+  }
+
+  .paragraph--text-phone {
+    /* font-family: Poppins; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    color: #fff;
+  }
 }
