@@ -9,10 +9,14 @@
     "children": ["flex-layout.row#footer-mobile"]
   },
   "flex-layout.row#footer-desktop": {
-    "children": ["social-networks", "accepted-payment-methods", "powered-by"]
+    "children": [
+      "flex-layout.row#social-networks",
+      "accepted-payment-methods",
+      "powered-by"
+    ]
   },
   "flex-layout.row#footer-mobile": {
-    "children": ["image", "flex-layout.row#text-mobile"]
+    "children": ["image", "flex-layout.row#content-mobile"]
   },
 
   "image": {
@@ -22,7 +26,7 @@
     }
   },
 
-  "flex-layout.row#text-mobile": {
+  "flex-layout.row#content-mobile": {
     "children": [
       "rich-text#title-institutional",
       "rich-text#text-about-us",
@@ -35,7 +39,7 @@
       "rich-text#text-privacy-policy",
       "rich-text#text-exchange-return-policy",
       "rich-text#title-social-networks",
-      "social-networks",
+      "flex-layout.row#social-networks",
       "flex-layout.row#payment-methods",
       "rich-text#text-copyright"
     ]
@@ -115,12 +119,23 @@
     }
   },
 
-  "social-networks": {
+  "flex-layout.row#social-networks": {
+    "children": ["image#facebook", "image#instagram"],
     "props": {
-      "socialNetworks": [
-        { "url": "https://facebook.com/foo", "name": "Facebook" },
-        { "url": "https://instagram.com/foo", "name": "Instagram" }
-      ]
+      "blockClass": "footer-social-networks"
+    }
+  },
+  "image#facebook": {
+    "props": {
+      "maxHeight": 25,
+      "src": "arquivos/facebook.svg"
+    }
+  },
+
+  "image#instagram": {
+    "props": {
+      "maxHeight": 25,
+      "src": "arquivos/instagram.svg"
     }
   },
 
@@ -130,7 +145,7 @@
       "image#master-card",
       "image#amex",
       "image#elo",
-      "image#visa",
+      "image#billet",
       "image#hipercard"
     ],
     "props": {
@@ -157,20 +172,20 @@
   },
   "image#elo": {
     "props": {
-      "src": "arquivos/visa.svg",
+      "src": "arquivos/elo.svg",
       "maxHeight": 25
     }
   },
-  // "image#visa": {
-  //   "props": {
-  //     "src": "arquivos/amex.svg",
-  //     "maxHeight": 25
-  //   }
-  // },
+  "image#billet": {
+    "props": {
+      "src": "arquivos/boleto.svg",
+      "maxHeight": 25
+    }
+  },
 
   "image#hipercard": {
     "props": {
-      "src": "arquivos/amex.svg",
+      "src": "arquivos/visa.svg" /*fix here*/,
       "maxHeight": 25
     }
   }

@@ -1,4 +1,18 @@
 @media (max-width: 1024px) {
+  .flexRowContent--footer-social-networks {
+    display: flex;
+  }
+
+  .flexRowContent--footer-social-networks .stretchChildrenWidth {
+    justify-content: flex-start;
+    width: 10% !important;
+  }
+
+  .flexRow--footer-social-networks {
+    width: 100%;
+    margin-left: 20px;
+  }
+
   .flexRow--footer-payment-methods {
     justify-content: center;
     display: flex;
