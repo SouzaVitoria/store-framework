@@ -7,7 +7,7 @@
   src: url("/arquivos/Poppins-ExtraBold.ttf.css") format("opentype");
 } */
 
-@media (max-width: 1204px) {
+@media (max-width: 1024px) {
   .headingLevel2--footer-title {
     font-weight: 600;
     font-size: 15px;
@@ -16,7 +16,7 @@
   .paragraph--footer-text {
     font-weight: 500;
     font-size: 12px;
-    margin: 9px 0;
+    margin: 4px 0;
   }
 
   .headingLevel2--footer-title,

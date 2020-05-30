@@ -1,4 +1,4 @@
-@media (max-width: 1204px) {
+@media (max-width: 1024px) {
   .flexRow--footer-payment-methods {
     justify-content: center;
     display: flex;
