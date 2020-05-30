@@ -32,3 +32,14 @@
   margin: 0 auto;
   padding: 0;
 }
+
+@media (max-width: 1024px) {
+  .imageElement--footer-mundo-pet {
+    width: 60px !important;
+    margin-top: 35px;
+  }
+
+  .imageElement--footer-animais {
+    width: 270px !important;
+  }
+}
