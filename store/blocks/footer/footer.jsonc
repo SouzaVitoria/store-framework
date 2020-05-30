@@ -16,13 +16,26 @@
     ]
   },
   "flex-layout.row#footer-mobile": {
-    "children": ["image", "flex-layout.row#content-mobile"]
+    "children": [
+      "image#mundo-pet",
+      "image#animais",
+      "flex-layout.row#content-mobile"
+    ]
   },
 
-  "image": {
+  "image#mundo-pet": {
     "props": {
       "width": 300,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "src": "/arquivos/footer-mundo-pet.svg",
+      "blockClass": "footer-mundo-pet"
+    }
+  },
+
+  "image#animais": {
+    "props": {
+      "width": 300,
+      "src": "/arquivos/footer-animais.svg",
+      "blockClass": "footer-animais"
     }
   },
 
@@ -42,7 +55,10 @@
       "flex-layout.row#social-networks",
       "flex-layout.row#payment-methods",
       "rich-text#text-copyright"
-    ]
+    ],
+    "props": {
+      "blockClass": "footer-content-text"
+    }
   },
 
   "rich-text#title-institutional": {
@@ -66,7 +82,7 @@
 
   "rich-text#text-about-us": {
     "props": {
-      "text": "Sobre o mundo Pet",
+      "text": "Sobre a mundo Pet",
       "blockClass": "footer-text"
     }
   },
@@ -185,7 +201,7 @@
 
   "image#hipercard": {
     "props": {
-      "src": "arquivos/visa.svg" /*fix here*/,
+      "src": "arquivos/hipercard.svg",
       "maxHeight": 25
     }
   }
