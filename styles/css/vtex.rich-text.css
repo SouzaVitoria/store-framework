@@ -1,0 +1,44 @@
+/* @font-face {
+  font-family: "PoppinsLight";
+  src: url("/arquivos/Poppins-Light.ttf.css") format("opentype");
+}
+@font-face {
+  font-family: "PoppinsExtraBold";
+  src: url("/arquivos/Poppins-ExtraBold.ttf.css") format("opentype");
+} */
+
+@media (max-width: 1204px) {
+  .headingLevel2--footer-title {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .paragraph--footer-text {
+    font-weight: 500;
+    font-size: 12px;
+    margin: 9px 0;
+  }
+
+  .headingLevel2--footer-title,
+  .paragraph--footer-text {
+    font-style: normal;
+    line-height: 22px;
+    color: #637390;
+    margin-left: 10px;
+  }
+
+  .paragraph--footer-copyright {
+    margin: 32px 0 19px;
+    text-align: center;
+    /* font-family: Open Sans; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+    color: #727272;
+  }
+
+  .container--footer-copyright {
+    justify-content: center;
+  }
+}
