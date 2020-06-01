@@ -43,3 +43,9 @@
     width: 270px !important;
   }
 }
+
+@media only screen and (min-width: 640px) {
+ .imageElement--footer-mundo-pet{
+   width: 60px !important;
+ }
+}
