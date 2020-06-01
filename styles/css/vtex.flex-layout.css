@@ -2,7 +2,8 @@
   .flexRow--footer-content-text {
     background-image: url("/arquivos/footer-background.svg");
     background-size: contain;
-    background-position: center;
+    background-position: right;
+    background-repeat: no-repeat;
   }
 
   .flexRowContent--footer-social-networks {
