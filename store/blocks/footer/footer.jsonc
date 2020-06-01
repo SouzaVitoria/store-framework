@@ -9,55 +9,75 @@
     "children": ["flex-layout.row#footer-mobile"]
   },
   "flex-layout.row#footer-desktop": {
-    "children": [
-      "flex-layout.row#social-networks",
-      "accepted-payment-methods",
-      "powered-by"
-    ]
+    "children": []
   },
   "flex-layout.row#footer-mobile": {
     "children": [
-      "image#mundo-pet",
-      "image#animais",
+      "flex-layout.row#logo-mobile",
       "flex-layout.row#content-mobile"
-    ]
-  },
-
-  "image#mundo-pet": {
-    "props": {
-      "width": 300,
-      "src": "/arquivos/footer-mundo-pet.svg",
-      "blockClass": "footer-mundo-pet"
+    ],
+    "props":{
+      "blockClass": "footer-mobile"
     }
   },
 
-  "image#animais": {
-    "props": {
-      "width": 300,
-      "src": "/arquivos/footer-animais.svg",
-      "blockClass": "footer-animais"
+  "flex-layout.row#logo-mobile":{
+    "children":[
+      "image#mundo-pet",
+      "image#animais"
+    ],
+    "props":{
+      "blockClass": "footer-logo"
     }
   },
-
   "flex-layout.row#content-mobile": {
     "children": [
-      "rich-text#title-institutional",
-      "rich-text#text-about-us",
-      "rich-text#text-our-events",
-      "rich-text#text-tips-curiosities",
-      "rich-text#text-work-us",
-      "rich-text#title-support",
-      "rich-text#text-faq",
-      "rich-text#text-service-channels",
-      "rich-text#text-privacy-policy",
-      "rich-text#text-exchange-return-policy",
-      "rich-text#title-social-networks",
+      "flex-layout.row#institutional",
+      "flex-layout.row#support",
       "flex-layout.row#social-networks",
       "flex-layout.row#payment-methods",
       "rich-text#text-copyright"
     ],
     "props": {
       "blockClass": "footer-content-text"
+    }
+  },
+
+  "flex-layout.row#institutional":{
+    "children":[
+      "rich-text#title-institutional",
+      "rich-text#text-about-us",
+      "rich-text#text-our-events",
+      "rich-text#text-tips-curiosities",
+      "rich-text#text-work-us"
+    ]
+  },
+  "flex-layout.row#support":{
+    "children":[
+      "rich-text#title-support",
+      "rich-text#text-faq",
+      "rich-text#text-service-channels",
+      "rich-text#text-privacy-policy",
+      "rich-text#text-exchange-return-policy"
+    ]
+  },
+  "flex-layout.row#social-networks":{
+    "children":[
+      "rich-text#title-social-networks",
+      "flex-layout.row#icons"
+    ]
+  },
+  "flex-layout.row#payment-methods": {
+    "children": [
+      "image#visa",
+      "image#master-card",
+      "image#amex",
+      "image#elo",
+      "image#billet",
+      "image#hipercard"
+    ],
+    "props": {
+      "blockClass": "footer-payment-methods"
     }
   },
 
@@ -135,7 +155,7 @@
     }
   },
 
-  "flex-layout.row#social-networks": {
+  "flex-layout.row#icons": {
     "children": ["image#facebook", "image#instagram"],
     "props": {
       "blockClass": "footer-social-networks"
@@ -147,7 +167,6 @@
       "src": "arquivos/facebook.svg"
     }
   },
-
   "image#instagram": {
     "props": {
       "maxHeight": 25,
@@ -155,19 +174,21 @@
     }
   },
 
-  "flex-layout.row#payment-methods": {
-    "children": [
-      "image#visa",
-      "image#master-card",
-      "image#amex",
-      "image#elo",
-      "image#billet",
-      "image#hipercard"
-    ],
+  "image#mundo-pet": {
     "props": {
-      "blockClass": "footer-payment-methods"
+      "width": 300,
+      "src": "/arquivos/footer-mundo-pet.svg",
+      "blockClass": "footer-mundo-pet"
     }
   },
+  "image#animais": {
+    "props": {
+      "width": 300,
+      "src": "/arquivos/footer-animais.svg",
+      "blockClass": "footer-animais"
+    }
+  },
+
   "image#visa": {
     "props": {
       "src": "arquivos/visa.svg",
